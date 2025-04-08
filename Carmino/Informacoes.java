@@ -18,40 +18,50 @@
  */
 
 
-public class Informacoes{
-    public class usuarios{
+
+    public class Informacoes{
         String nome;
         String email;
-        int telefone;
-        int CPF;
-        int numero;
-
-        public usuarios(String nome, String email, int telefone, int CPF, int numero){
-            this.nome = nome;
-            this.email = email;
-            this.telefone = telefone;
-            this.CPF = CPF;
-            this.numero = numero;
-        }
+        String telefone;
+        String CPF;
 
         public String getNome(){
             return nome;
         }
+        public void setNome(String nome){
+            this.nome = nome;
+        }
+
+
         public String getEmail(){
             return email;
         }
-        public int getTelefone(){
+        public void setEmail(String email){
+            this.email = email;
+        }
+
+
+        public String getTelefone(){
             return telefone;
         }
-        public int getCPF(){
+        public void setTelefone(String telefone){
+            this.telefone = telefone;
+        }
+
+
+        public String getCPF(){
             return CPF;
         }
-        public int getNumero(){
-            return numero;
+        public void setCPF(String CPF){
+            this.CPF = CPF;
         }
-    @Override
-    public String toString(){
-        return "Seu nome: " + nome + "seu email: " + email + "seu telefone: " + telefone + "seu CPF é: " + CPF;
+
+        
+        public void exibirInformacoes(){
+        if (nome != null) System.out.println("Seu nome é: " + nome);
+        if (email != null) System.out.println("Seu email é: " + email);
+        if (telefone != null) System.out.println("Seu telefone é: " + telefone);
+        if (CPF != null) System.out.println("Seu CPF é: " + CPF);
+        }
+
     }
-    }
-}
