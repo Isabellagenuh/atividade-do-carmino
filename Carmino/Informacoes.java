@@ -11,9 +11,12 @@
 
   METODO:
   definir as variaveis e retornar os valores
-  
 
-    import javax.sound.midi.MidiDevice.Info;
+
+  DECLARAR INFORMAÇÕES:
+  - criar uma variavel para exibir as informações
+
+
 
  */
 
@@ -21,9 +24,9 @@
 
     public class Informacoes{
         String nome;
-        String email;
-        String telefone;
-        String CPF;
+        private String email;
+        private String telefone;
+        private String CPF;
 
         public String getNome(){
             return nome;

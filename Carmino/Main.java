@@ -12,41 +12,66 @@ Exibir menu:
 * 2: ADICIONAR O EMAIL DO USUÁRIO
 * 3: ADICIONAR O TELEFONE DO USUÁRIO
 * 4: ADICIONAR O CPF DO USUÁRIO
-* 5: Encerrar o programa
+* 5: VER INFORMAÇÕES
+* 6: ALTERAR INFORMAÇÕES
+* 0: ENCERRAR O PROGRAMA
+ESCOLHA UMA OPÇÃO:
 
-RESULTADO DE INFORMAÇÕES DO USUÁRIO:
-    * 1: Deseja verificar seus dados?
-    * 2: aperte 0 para sair do programa de informações
+
 
 
 ESCOLHAS POSSIVEIS:
 
   Se o usuário escolher 1 {
-  solicitar que o usuário escreva o seu nome
+  solicitar que o usuário escreva o seu Nome
   chamar o metodo para adicionar a informação na lista
   encerrar
   }
 
-    Se o usuário escolher 2 {
-  solicitar que o usuário escreva o seu nome
+  Se o usuário escolher 2 {
+  solicitar que o usuário escreva o seu Email
   chamar o metodo para adicionar a informação na lista
   encerrar
   }
 
-    Se o usuário escolher 3 {
-  solicitar que o usuário escreva o seu nome
+  Se o usuário escolher 3 {
+  solicitar que o usuário escreva o seu Telefone
   chamar o metodo para adicionar a informação na lista
   encerrar
   }
 
-    Se o usuário escolher 4 {
-  solicitar que o usuário escreva o seu nome
+  Se o usuário escolher 4 {
+  solicitar que o usuário escreva o seu CPF
   chamar o metodo para adicionar a informação na lista
   encerrar
   }
 
-    Se o usuário escolher 5 {
-    exibir a mensagem "programa encerrado."
+  Se o usuário escolher 5 {
+    exibir a variavel que guarda as informações.
+  }
+  
+  Se o usuário escolher 6 {
+    exibir um array com as variaveis que podem ser alteradas:
+    -Digite 1 para alterar seu Nome:
+    -Digite 2 para alterar seu Email:
+    -Digite 3 para alterar seu Telefone:
+    -Digite 4 para alterar seu CPF:
+
+    criar uma variavel para a mudança
+    criar um scanner para ler a menssagem do usuario
+
+    criar if para todas as opções:
+    se for 1{
+      verificar se a mensagem é igual{
+        sua mensagem é igual
+      } se nao{
+        alterar a variavel
+        mudança feita com sucesso!
+      }
+      voltar para estrutura de rerpetição anterior!
+      (repetir esta estrutura em todas as 4 variaveis de alteração de dados);
+    }
+    
   }
 
   Caso tenha algum caracter diferente {
